@@ -70,12 +70,13 @@ h3 {
     z-index: 100;
     position: fixed;
     top: 0;
-    left: 0
+    left: 0;
 }
 
 .headerContainer{
     max-width: 120em;
     margin: 0 auto;
+    position: relative;
 }
 
 .navbarHeader {
@@ -83,10 +84,12 @@ h3 {
 }
 
 .menu {
-    float: right;
     font-size: 1.8em;
     color: #fff;
     text-transform: uppercase;
+    position: absolute;
+    top: 0.2em;
+    right: 0;
 }
 
 .menu span {
@@ -98,7 +101,7 @@ h3 {
     height: 100%;
     position: fixed;
     top: 11%;
-    left: -5px;
+    left: -1px;
     z-index: 99;
     overflow-x: hidden;
     background-color: #fff;
@@ -419,17 +422,9 @@ h3 {
 }
 
 .howToImg img {
-    width: 40em;
-    height: 20em;
+    width: 100%;
+    height: 100%;
 }
-
-@media only screen and (max-width: 640px) {
-    .howToImg  {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 .howToInfo {
     width: 100%;
 }
