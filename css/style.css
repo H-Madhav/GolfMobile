@@ -158,8 +158,10 @@ h3 {
     color: #68B90B;
 }
 
-#sideMenu.toggleMenu {
-    width: 23em;
+.sideMenu ul li a.close{
+  color: #68B90B;
+  text-align: right;
+  padding-right: 1em;
 }
 
 #main {
