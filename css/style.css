@@ -99,8 +99,9 @@ h3 {
 .sideMenu {
     width: 0;
     height: 100%;
+    margin-top: 7.5em;
     position: fixed;
-    top: 11%;
+    top: 0;
     left: -1px;
     z-index: 99;
     overflow-x: hidden;
