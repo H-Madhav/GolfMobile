@@ -474,7 +474,7 @@ h3 {
     background: #68B90B;
 }
 
-.lessons {
+/*.lessons {
     width: 100%;
     background-color: #222222;
 }
@@ -515,9 +515,9 @@ h3 {
 .lessonsWrapper h3 {
     color: #fff;
     padding-top: 1em;
-}
+}*/
 
-.membership {
+/*.membership {
     width: 100%;
     background: #fff;
     padding: 6em 1em 0;
@@ -615,7 +615,7 @@ h3 {
     text-decoration: none;
     margin: 1em 0;
     background: #68B90B;
-}
+}*/
 
 .reviews {
     width: 100%;
