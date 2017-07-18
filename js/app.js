@@ -14,8 +14,12 @@ for (i = 0; i < accordion.length; i++) {
 
 var sideMenu = document.getElementById("sideMenu");
 function clickMenu(){
-   sideMenu.classList.toggle("toggleMenu");
+   sideMenu.style.width = "230px";
 };
+
+function closeMenu() {
+	sideMenu.style.width = "0";
+}
 
 function openLearn(evt, task){
 	var i, tabcontent, tablinks;
