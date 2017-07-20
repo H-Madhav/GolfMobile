@@ -819,3 +819,111 @@ footer {
 .footerWrapper p a {
     color: #68B90B;
 }
+
+/*--------------Tournament-----------*/
+
+.heroImg {
+    width: 100%;
+    height: 30em;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/GolfTick.webp');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 7em;
+}
+
+.heroImgOverlay {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    text-align: center;
+}
+
+.heroImgOverlay h1, p{
+    color: #fff;
+    padding-bottom: .5em; 
+}
+
+.heroImgOverlay hr {
+    width: 8em;
+    border: solid 1px #fff;
+    margin: 1em auto;
+}
+
+.schedule {
+    width: 100%;
+    background: #fff;
+    margin: 3em 0 4em;
+}
+
+.scheduleWrapper {
+    max-width: 120em;
+    margin: 0 auto;
+}
+
+.scheduleWrapper h2 {
+    padding-left: 0.5em;
+}
+
+.scheduleTable {
+    width: 100%;
+    padding: 3em 0;
+}
+
+.scheduleTable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.scheduleTable tr th {
+    font-size: 1.6em;
+    background-color: #00284b;
+    color: #fff;
+    font-weight: normal;
+}
+
+.scheduleTable tr td {
+    font-size: 1.6em;
+    color: #666;
+}
+
+.scheduleTable tr td a {
+    text-decoration: none;
+    color: #00284b;
+    padding: 0.5em 1em;
+}
+
+.scheduleTable tr td > a {
+    padding: 0;
+}
+
+.scheduleTable tr td ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.scheduleTable tr td ul li {
+    display: inline-block;
+    margin-right: 0.5em;
+    padding: 0;
+}
+
+.scheduleTable td p {
+    color: #666;
+    font-size: 1em;
+}
+
+.scheduleTable td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.scheduleTable td:first-child {
+    padding: 8px 11px;
+}
