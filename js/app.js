@@ -36,5 +36,9 @@ function openLearn(evt, task){
     evt.currentTarget.className += " active";
 };
 
-document.getElementById("defaultOpen").click();
+var clickthis = document.getElementById("defaultOpen");
+
+if (clickthis) {
+    clickthis.click();
+}
 
