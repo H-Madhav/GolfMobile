@@ -1249,7 +1249,7 @@ footer {
 }
 
 .booking button {
-    width: 49.75%;
+    width: 50%;
     float: left;
     text-align: center;
     color: #fff;
@@ -1261,7 +1261,7 @@ footer {
 }
 
 #book {
-    margin-right: 0.5%;
+    border-right: solid 1px #ddd;
 }
 
 .callMe {
