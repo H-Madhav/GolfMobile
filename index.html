@@ -9,19 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans%7CRaleway">
-    <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() { 
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                // Registration was successful
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
-            // registration failed :(
-            console.log('ServiceWorker registration failed: ', err);
-            });
-            });
-        }
-    </script>
 </head>
 <body>
     <header id="header">
@@ -39,7 +26,7 @@
     		    <li><a href="javascript:void(0);" class="close" onclick="closeMenu()"><i class="fa fa-times" aria-hidden="true"></i></a></li>
     			<li><a href="index.html">Home</a></li>
     			<li><a href="tournament.html">Tournament</a></li>
-    			<li><a href="#">Process</a></li>
+    			<li><a href="tourdetails.html">Details</a></li>
     			<li><a href="#">Coaches</a></li>
     			<li><a href="#">Membership</a></li>
     			<li>
@@ -394,6 +381,23 @@
 		$('.slick-prev').html('<i class="fa fa-angle-left" aria-hidden="true"></i>');
         $('.slick-next').html('<i class="fa fa-angle-right" aria-hidden="true"></i>');
 	});
+
+    function openLearn(evt, task){
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("howTo");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tab");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(task).style.display = "block";
+        evt.currentTarget.className += " active";
+    };
+
+    document.getElementById("defaultOpen").click();
 </script>
 </body>
 </html>
