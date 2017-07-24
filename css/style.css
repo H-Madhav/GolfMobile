@@ -1249,6 +1249,7 @@ footer {
     top: -9999px;
     left: 0;
     z-index: 2;
+    overflow: auto;
     background: rgba(0, 0, 0, 0.6);
     transition: all 0.4s;
 }
@@ -1274,6 +1275,7 @@ footer {
     margin: 25% auto;
     padding: 4em 1em;
     background: #fff;
+    overflow-y: auto;
 }
 
 .callMe h3 {
