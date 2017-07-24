@@ -1183,11 +1183,12 @@ footer {
 } 
 
 .bookNow {
-    max-width: 85%;
+    max-width: 95%;
     background: #fff;
     padding: 2em;
-    margin: 20% auto;
+    margin: 15% auto;
     border-radius: 3px;
+    overflow: auto;
 }
 
 .bookNow h3 {
