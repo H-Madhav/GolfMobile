@@ -4,6 +4,8 @@ body{
     padding: 0;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    position: relative;
+    overflow-x: hidden;
 }
 
 body {
@@ -444,6 +446,7 @@ h3 {
 .howToInfo p {
     text-align: left;
     margin-bottom: 1em;
+    color: #4f4f4f;
 }
 
 .howToInfo ul {
@@ -926,4 +929,399 @@ footer {
 
 .scheduleTable td:first-child {
     padding: 8px 11px;
+}
+
+/*----------------tourdetails-----------*/
+
+.detailImg {
+    width: 100%;
+    height: 40em;
+    margin-top: 7em;
+    position: relative;
+}
+
+.detailImg img {
+    width: 100%;
+    height: 40em;
+}
+
+.detailImg button {
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    border: none;
+    background: #fff;
+    color: #000;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+
+/*--------------------tourdetails.html--------------*/
+
+.detailImg {
+    width: 100%;
+    height: 30em;
+    margin-top: 7em;
+    position: relative;
+}
+
+.detailImg img{
+    width: 100%;
+    max-height: 30em;
+
+}
+
+.detailImg button {
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    border: none;
+    background: #fff;
+    color: #000;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.6em;
+}
+
+.modal {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 0; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.8); 
+    transition: all 0.4s;
+}
+
+.modalWrapper {
+    background-color: transparent;
+    margin: 50% auto; 
+    width: 100%; 
+    height: 40em;
+    position: relative;
+}
+
+.modal-img, .modal-img div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-img .slick-next {
+    position: absolute;
+    top: 30%;
+    right: 1%;
+    z-index: 1;  
+    font-size: 5em;
+    color: #fff;
+    background: transparent;
+    border: none; 
+}
+
+.modal-img .slick-prev {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    z-index: 1; 
+     font-size: 5em;
+    color: #fff;
+    background: transparent;
+    border: none;   
+}
+
+#close {
+    position: absolute;
+    top: -12%;
+    right: -1%;
+    z-index: 1;
+    font-size: 4em;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#close:hover {
+    color: #fff;
+}
+
+.infoPan {
+    width: 100%;
+    margin: 2em auto 4em;
+    background: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.mainPan {
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    border: solid 1px #ddd;
+    padding: 3em 1em;
+}
+
+.mainInfo {
+    width: 100%;
+}
+
+.mainInfo h3{
+    color: #000;
+    padding-bottom: 0.5em;
+}
+
+.mainInfo p {
+    color: #4e4e4e;
+    padding-bottom: 0;
+}
+
+.mainInfo p b{
+    color: #000;
+    font-weight: 400;
+}
+
+.controlPan {
+    width: 100%;
+    margin: 2em 0 0;
+}
+
+.controlPan ul {
+    width: 100%;
+    padding: 1em 0;
+    margin: 0;
+    text-align: center;
+    border: solid 1px #ddd;
+}
+
+.controlPan ul li {
+    list-style: none;
+    display: inline-block;
+    min-width: 5em;
+    border-right: solid 1px #ddd;
+    text-align: center;
+    margin: 0 0.1em;
+}
+
+.controlPan ul li:last-child {
+    border-right: none;
+}
+
+.controlPan ul li a{
+    display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.4em;
+   padding: 0.5em 1em
+}
+
+.pan {
+    background: #68B90B;
+    color: #fff;
+}
+
+.controlledPan {
+    width: 100%;
+    margin: 2em auto;
+}
+
+.panView {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.panViewSelect {
+    width: 100%;
+    margin: 2em 0;
+    border: dotted 1px #ddd;
+    padding: 2em;
+    position: relative;
+}
+
+.panViewSelect h3 {
+    margin: 0;
+}
+
+.panViewSelect select {
+    position: absolute;
+    top: 25%;
+    right: 2%;
+    padding: 0.5em 1em;
+}
+
+.pdfHolder {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pdfHolder iframe {
+    border: none;
+    box-shadow: 0px 0px 1px 1px #888;
+    overflow: hidden;
+}
+
+/*----Booking form---*/
+
+.sidePan {
+    width: 100%;
+    padding: 2em;
+    background: #fff;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    position: fixed;
+    top: 8em;
+    left: 0;
+    z-index: 1;
+    display: none;
+} 
+
+.bookNow {
+    max-width: 80%;
+}
+
+.bookNow h3 {
+    color: #000;
+    padding-bottom: 0.5em;
+}
+
+.bookNow form {
+    width: 100%;
+}
+
+.bookNow label {
+    display: inline-block;
+    color: #666;
+    font-size: 1.6em;
+}
+
+.bookNow div {
+    margin-bottom: 1em;
+}
+
+.bookNow div input {
+    padding: 0.5em 0;
+    border: none;
+    border-bottom: solid 1px #ddd;
+    margin-left: 1em;
+    width: 80%;
+}
+
+.bookNow button {
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    line-height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #68B90B;
+    text-decoration: none;
+    margin: 1em 0 0;
+    background: #68B90B;
+    cursor: pointer;
+}
+
+.booking {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#callMeModal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -9999px;
+    left: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s;
+}
+
+.booking button {
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    padding: 0.8em 2em;
+    border-radius: 3px;
+    font-size: 1.6em;
+    border: none;
+}
+
+.callMe {
+    width: 80%;
+    margin: 25% auto;
+    padding: 4em 1em;
+    background: #fff;
+}
+
+.callMe h3 {
+    text-align: center;
+    color: #000;
+}
+
+.callMe span {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    color: #68B90B;
+}
+
+.callMeForm {
+    width: 100%;
+}
+
+.callMeForm div {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.callMeForm div input {
+    font-size: 1.4em;
+    padding: 0.5em;
+    margin: 2em 0;
+}
+
+.callMeForm div input:first-child {
+    width: 20%;
+}
+
+.callMeForm div input:nth-child(2){
+    width: 75%;
+}
+
+.callMeForm button {
+    -webkit-border-radius: 3px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    line-height: 30px;
+    padding: 0 30px;
+    color: #fff;
+    display: block;
+    border: 2px solid #68B90B;
+    text-decoration: none;
+    margin: 0 auto;
+    background: #68B90B;
+}
+
+.closeMe {
+    float: right;
+    color: #fff;
+    background: #68B90B;
+    font-size: 1.4em;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 3px;
 }
